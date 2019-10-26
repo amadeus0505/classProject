@@ -1,35 +1,38 @@
-
-
 body{
-  padding: 0
-  
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
   margin: 0;
 }
 .navbar{
-  padding: 20px;
+  padding: 1px;
   background-color: lightgray;
 }
-.navbut{
-  display: inline-block;
-  padding: 10px 10px 10px 10px;
-  margin: 0 10px 0 10px;
+a{
   text-decoration: none;
   color: black;
+}
+ul{
+  margin: 0;
+}
+.navbut{
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
   font-size: 20px;
-  transition: 1s;
 }
-.navbut::before{
+.navbut::after{
   content: "";
-  position: absolute;
-  width: 0px;
-  height: 0.5px;
-  left: 40px;
-  margin-top: 20px;
-  border-color: black;
-  border-width: 1px;
-  background-color: black;
-  transition: .35s;
-}
-.navbut:hover::before{
+  background-color: #7e7e7e;
+  height: 3px;
   width: 100%;
+  display: block;
+  border-radius: 3px;
+  transform: scale(0);
+  transition: .3s;
+}
+.navbut:hover::after{
+  transform: scale(1);
+}
+.navbut:hover{
+
 }
